@@ -1,2 +1,3 @@
-# Pi-Video-Kiosk
-Video display kiosk running on a Raspberry Pi
+# Pi-Kiosk
+
+Photo and video display kiosks running on a Raspberry Pi
