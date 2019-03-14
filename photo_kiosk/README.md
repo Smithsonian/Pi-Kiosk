@@ -22,10 +22,10 @@ Then, we have these lines in the cron file:
 0 17 * * 1-5 sudo killall fbi
 0 17 * * 1-5 tvservice -o
 0 8 * * 1-5 sudo shutdown -r now
+30 17 * * 5 root apt-get update && apt-get upgrade -y >> /var/log/apt_update.log
 ```
 
  - The first line closes the `fbi` slideshow at 5PM
  - The second line shuts down the HDMI output so that the display can turn itself off and save power
  - The third line reboots the Pi at 8 in the morning on weekdays
-
-More info and a more elegant solution coming soon.
+ - The fourth line updates the system every Friday
