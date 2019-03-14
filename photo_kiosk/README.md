@@ -8,10 +8,10 @@ We are displaying some of the results from our digitization projects on a displa
 sudo apt-get install fbi
 ```
 
-To have it run automatically at boot, we added this line to the `.profile` file:
+To have it run automatically at boot, we added this line to the `/etc/rc.local` file:
 
 ```bash
-sudo fbi -T 2 --noverbose -t 8 -u images/*.jpg
+sudo fbi -T 2 --noverbose -t 8 -u /home/pi/images/*.jpg
 ```
 
 This launches `fbi` and displays a new image every 8 seconds in a random order from the folder `/home/pi/images/`. The images were resized to 1080x1920 to avoid having to resize on the fly for the display. We are exploring options to display on 4k monitors using the Pi 3 B+. 
